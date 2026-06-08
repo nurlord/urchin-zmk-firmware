@@ -6,16 +6,16 @@ manifest:
     # bravekarma
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    # kyek / duckyb
-    - name: duckyb
-      url-base: https://github.com/duckyb
+    # nurlord
+    - name: nurlord
+      url-base: https://github.com/nurlord
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: main
       import: app/west.yml
     - name: urchin-zmk-module
-      remote: duckyb
+      remote: nurlord
       revision: main
   self:
     path: config
