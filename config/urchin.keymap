@@ -18,9 +18,9 @@
             bindings = <&kp>, <&kp>;
         };
 
-        shft_l: shift_left {
+        ht_l: hold_tap_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_LEFT";
+            label = "HOLD_TAP_LEFT";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
@@ -29,9 +29,9 @@
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
         };
 
-        shft_r: shift_right {
+        ht_r: hold_tap_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_RIGHT";
+            label = "HOLD_TAP_RIGHT";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
@@ -65,8 +65,8 @@
         default_layer {
             bindings = <
             &kp Q       &kp W      &kp E      &kp R       &kp T          &kp Y       &kp U       &kp I       &kp O      &kp P
-            &kp A       &kp S      &kp D      &kp F       &kp G          &kp H       &kp J       &kp K       &kp L      &kp SEMI
-            &shft_l LSHFT Z &kp X      &kp C      &kp V       &kp B          &kp N       &kp M       &kp COMMA   &kp DOT    &shft_r RSHFT FSLH
+            &ht_l LGUI A &ht_l LALT S &ht_l LCTRL D &kp F   &kp G          &kp H       &ht_r RCTRL J &ht_r RALT K &ht_r RGUI L &kp SEMI
+            &ht_l LSHFT Z &kp X      &kp C      &kp V       &kp B          &kp N       &kp M       &kp COMMA   &kp DOT    &ht_r RSHFT FSLH
                                               &lt 1 ESC   &mt_rep LGUI SPACE &lt 3 RET   &mt_rep LCTRL BSPC
             >;
         };
