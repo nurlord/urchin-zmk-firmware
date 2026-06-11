@@ -1,0 +1,13 @@
+/*
+ * Override nice_nano_v2 DCDC settings to fix battery drain on SuperMini clones.
+ * The SuperMini does not have the hardware inductors for the DCDC regulators.
+ * Forcing LDO mode prevents extreme quiescent current leakage.
+ */
+
+&reg0 {
+    regulator-initial-mode = <NRF5X_REG_MODE_LDO>;
+};
+
+&reg1 {
+    regulator-initial-mode = <NRF5X_REG_MODE_LDO>;
+};
