@@ -86,7 +86,7 @@
             bindings = <
             &kp LA(Q)  &kp LA(N8)      &kp LA(N7) &kp LA(N6)  &kp LA(N9)      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP   &mmv MOVE_RIGHT &kp LA(BSPC)
             &kp LA(N4) &mt LALT LA(N3) &kp LA(N2) &kp LA(N1)  &kp LA(N5)      &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT       &kp LA(RET)
-            &kp LSHFT  &kp LALT        &kp LA(D)  &msc SCRL_DOWN &msc SCRL_UP       &mkp MB1       &mkp MB2       &kp LA(LS(SPACE)) &kp LC(LS(LALT))  &kp LA(SPACE)
+            &kp LSHFT  &kp LALT        &mt_tap LCTRL LA(D)  &msc SCRL_DOWN &msc SCRL_UP       &mkp MB1       &mkp MB2       &kp LA(LS(SPACE)) &kp LC(LS(LALT))  &kp LA(SPACE)
                                                   &trans      &trans          &kp TAB        &mo 2
             >;
         };
