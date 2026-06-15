@@ -85,12 +85,12 @@
             layers = <3>;
         };
 
-        // COMMA + DOT = Toggle Layer 2
+        // COMMA + DOT = Toggle Layer 5
         combo_num_toggle {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&tog 2>;
-            layers = <0 2>;
+            bindings = <&tog 5>;
+            layers = <0 5>;
         };
     };
 
@@ -120,10 +120,10 @@
         // Layer 2: Numpad & Media & Function
         num_layer {
             bindings = <
-            &kp N7            &kp N6            &kp N5   &kp N4   &kp F5         &kp C_MUTE     &kp N4       &kp N5       &kp N6   &kp N7
-            &kp N3            &kp N2            &kp N1   &kp N0   &kp N8         &kp N8         &kp N0       &kp N1       &kp N2   &kp N3
-            &kp LC(LS(EQUAL)) &kp LC(LS(MINUS)) &kp C_PP &kp N9   &kp C_NEXT     &kp LG(LS(J))  &kp N9       &kp COMMA    &trans   &kp LC(LS(LG(N4)))
-                                                         &tog 2   &trans         &trans         &trans
+            &kp C_BRI_DN      &kp C_BRI_UP      &kp F3   &kp F4   &kp F5         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp F11  &kp F12
+            &kp N1            &kp N2            &kp N3   &kp N4   &kp N5         &kp N6     &kp N7       &kp N8       &kp N9   &kp N0
+            &kp LC(LS(EQUAL)) &kp LC(LS(MINUS)) &kp C_PP &kp C_PREV &kp C_NEXT       &kp LG(LS(J))  &kp BSPC     &kp COMMA    &trans   &kp LC(LS(LG(N4)))
+                                                         &trans   &trans         &trans     &trans
             >;
         };
 
@@ -144,6 +144,16 @@
             &bootloader  &trans       &trans       &trans       &bt BT_SEL 1       &bt BT_SEL 4   &trans       &trans       &trans       &bootloader
             &trans       &trans       &trans       &trans       &bt BT_SEL 2       &bt BT_SEL 5   &trans       &trans       &trans       &trans
                                                    &trans       &trans             &trans         &trans
+            >;
+        };
+
+        // Layer 5: Symmetrical Numpad
+        sym_numpad_layer {
+            bindings = <
+            &kp N7  &kp N6  &kp N5  &kp N4  &trans          &trans  &kp N4  &kp N5  &kp N6  &kp N7
+            &kp N3  &kp N2  &kp N1  &kp N0  &kp N8          &kp N8  &kp N0  &kp N1  &kp N2  &kp N3
+            &trans  &trans  &trans  &kp N9  &trans          &trans  &kp N9  &trans  &trans  &trans
+                                    &tog 5  &trans          &trans  &trans
             >;
         };
     };
