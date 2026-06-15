@@ -68,6 +68,7 @@
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp SPACE>;
+            layers = <0 1 2>;
         };
 
         // Hold both left thumbs to access Settings Layer (Layer 4)
