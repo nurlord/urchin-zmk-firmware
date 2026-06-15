@@ -85,12 +85,12 @@
             layers = <3>;
         };
 
-        // COMMA + DOT = Toggle Layer 2 (Alpha Layer Only)
+        // COMMA + DOT = Toggle Layer 2
         combo_num_toggle {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&tog 2>;
-            layers = <0>;
+            layers = <0 2>;
         };
     };
 
