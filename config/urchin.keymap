@@ -78,7 +78,7 @@
             bindings = <&mo 4>;
         };
 
-        // EXCL + KP_DIVIDE = CARET (Symbol Layer Only)
+        // EXCL + PIPE = CARET (Symbol Layer Only)
         combo_caret {
             timeout-ms = <50>;
             key-positions = <20 21>;
@@ -132,8 +132,8 @@
         sym_layer {
             bindings = <
             &kp GRAVE &kp LT          &kp GT          &kp SQT      &kp DOT       &kp AMPS  &kp UNDER &kp LBRC &kp RBRC &kp PRCNT
-            &kp DQT   &kp KP_SUBTRACT &kp KP_PLUS     &kp KP_EQUAL &kp HASH      &kp PIPE  &kp COLON &kp LPAR &kp RPAR &kp QMARK
-            &kp EXCL  &kp KP_DIVIDE   &kp KP_MULTIPLY &kp BSLH     &kp COMMA     &kp TILDE &kp DLLR  &kp LBKT &kp RBKT &kp AT
+            &kp DQT   &kp KP_SUBTRACT &kp KP_PLUS     &kp KP_EQUAL &kp HASH      &kp KP_DIVIDE &kp COLON &kp LPAR &kp RPAR &kp QMARK
+            &kp EXCL  &kp PIPE        &kp KP_MULTIPLY &kp BSLH     &kp COMMA     &kp TILDE &kp DLLR  &kp LBKT &kp RBKT &kp AT
                                                       &trans       &kp SPACE     &trans    &trans
             >;
         };
