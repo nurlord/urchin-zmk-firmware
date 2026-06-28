@@ -109,22 +109,6 @@
             bindings = <&kp N>;
             layers = <0>;
         };
-
-        // S + D = V
-        combo_v {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp V>;
-            layers = <0>;
-        };
-
-        // K + L = M
-        combo_m {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp M>;
-            layers = <0>;
-        };
     };
 
     keymap {
