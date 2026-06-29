@@ -101,14 +101,6 @@
             bindings = <&kp B>;
             layers = <0>;
         };
-
-        // J + K = N
-        combo_n {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp N>;
-            layers = <0>;
-        };
     };
 
     keymap {
