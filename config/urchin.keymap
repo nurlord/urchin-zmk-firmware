@@ -130,7 +130,7 @@
         num_layer {
             bindings = <
             &kp C_BRI_DN      &kp C_BRI_UP      &kp F3   &kp F4   &kp F5         &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp F11  &kp F12
-            &kp N1            &kp N2            &kp N3   &kp N4   &kp N5         &kp N6     &kp N7       &kp N8       &kp N9   &kp N0
+            &kp N1            &kp N2            &kp N3   &kp N4   &kp N5         &kp N6     &kp N7       &kp N8       &kp N9   &mt_tap LGUI N0
             &kp LC(LS(EQUAL)) &kp LC(LS(MINUS)) &kp C_PP &kp C_PREV &kp C_NEXT       &kp LG(LS(J))  &kp BSPC     &kp COMMA    &trans   &kp LC(LS(LG(N4)))
                                                          &trans   &trans         &trans     &trans
             >;
